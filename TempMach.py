@@ -41,7 +41,7 @@ class windows:                       #Class for the output window you need to cr
         self.entry3.insert(END, str(a))
         self.entry4.insert(END, str(m))
         c1 = float(self.entry1.get())
-        if c1 > 11000:
+        if c1 > 11000:                    #Code to verify that input falls within the tropospheric constraint
             self.label6 = Label(text='Please enter a value under 11000 meters')
             self.label6.place(x=250, y=130)
             self.entry2.delete(0, 'end')
